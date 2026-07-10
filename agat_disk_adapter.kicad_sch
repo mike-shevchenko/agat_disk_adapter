@@ -145,6 +145,187 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:Conn_01x02_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02_Pin"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x02_Pin_1_1"
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Conn_01x04_Pin"
 			(pin_names
 				(offset 1.016)
@@ -3556,6 +3737,12 @@
 		(uuid "3bb9e25a-3a2c-45c7-a882-06683cc95d7b")
 	)
 	(junction
+		(at 91.44 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3cccd741-94b8-4330-b075-600758758d34")
+	)
+	(junction
 		(at 91.44 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3602,12 +3789,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "61d495ec-bace-4fab-9a80-99cceb70483c")
-	)
-	(junction
-		(at 91.44 166.878)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6cbe94f1-9fb8-48c4-8d74-5b7c0d5cc294")
 	)
 	(junction
 		(at 81.28 191.643)
@@ -3943,7 +4124,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 166.878) (xy 91.44 177.038)
+			(xy 91.44 166.878) (xy 91.44 175.26)
 		)
 		(stroke
 			(width 0)
@@ -4473,6 +4654,16 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 175.26) (xy 91.44 177.038)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "691f8aba-b4ad-43b9-9c30-b1c30a837d0d")
+	)
+	(wire
+		(pts
 			(xy 60.96 191.643) (xy 60.96 189.738)
 		)
 		(stroke
@@ -4510,6 +4701,16 @@
 			(type default)
 		)
 		(uuid "6d0f8127-eb5e-4e9b-b234-3dc46dcaa5e7")
+	)
+	(wire
+		(pts
+			(xy 106.68 180.34) (xy 106.68 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d310ff7-37ef-4638-be0b-bc85681dc59b")
 	)
 	(wire
 		(pts
@@ -4670,6 +4871,16 @@
 			(type default)
 		)
 		(uuid "8f1c8694-9db6-444b-9873-9e140a6ebb94")
+	)
+	(wire
+		(pts
+			(xy 91.44 175.26) (xy 104.14 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f669601-df74-4db9-8366-5ff9ea2d5eb6")
 	)
 	(wire
 		(pts
@@ -5561,6 +5772,16 @@
 		)
 		(uuid "4bfe3e32-eb97-4684-bfb3-79a3c706f373")
 	)
+	(label "PIN_32"
+		(at 91.948 175.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4fb0c4c5-53f7-47f9-9ce5-59d02dc6b6cf")
+	)
 	(label "EN1"
 		(at 78.74 66.675 270)
 		(effects
@@ -5671,15 +5892,15 @@
 		)
 		(uuid "77ed6011-556e-482e-b9d4-08f7ddb9e30a")
 	)
-	(label "+5"
-		(at 80.518 166.878 0)
+	(label "PH1"
+		(at 106.68 180.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "7faaedb4-5abb-4290-a741-a870a0f6ef01")
+		(uuid "7f1c4605-9b75-4f0c-8fd3-cbbb604ac0cd")
 	)
 	(label "-12"
 		(at 83.82 133.985 270)
@@ -5861,7 +6082,7 @@
 		)
 		(uuid "c34bab66-002f-4f9c-b806-5ee7be85181f")
 	)
-	(label "DS2"
+	(label "DE2"
 		(at 99.06 121.285 90)
 		(effects
 			(font
@@ -6171,85 +6392,6 @@
 			(project "agat_disk_adapter"
 				(path "/e6908ff4-84b7-4cdb-b4c1-fd2e829eca09"
 					(reference "J9_A1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 87.63 166.878 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "10b89057-930c-4f88-acd3-b19785fed946")
-		(property "Reference" "R2"
-			(at 86.36 164.592 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 89.662 164.592 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 87.63 168.656 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 87.63 166.878 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 87.63 166.878 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "f6561a29-35be-4a9b-b052-b315bb337399")
-		)
-		(pin "1"
-			(uuid "afca3240-40f7-4494-84e1-dad80681cb09")
-		)
-		(instances
-			(project "agat_disk_adapter"
-				(path "/e6908ff4-84b7-4cdb-b4c1-fd2e829eca09"
-					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -6960,6 +7102,89 @@
 			(project "agat_disk_adapter"
 				(path "/e6908ff4-84b7-4cdb-b4c1-fd2e829eca09"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 104.14 170.18 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6ceaa564-fa5b-4a74-87aa-231166e63404")
+		(property "Reference" "J9"
+			(at 100.838 172.212 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "PIN_32"
+			(at 92.202 175.006 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal"
+			(at 104.14 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 104.14 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b4a98593-7b4d-49c8-8cc8-5da194492090")
+		)
+		(pin "2"
+			(uuid "0b24c81a-4576-454c-9985-06b218ec4b86")
+		)
+		(instances
+			(project "agat_disk_adapter"
+				(path "/e6908ff4-84b7-4cdb-b4c1-fd2e829eca09"
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -8115,7 +8340,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "f49bfc71-ea69-4191-ab7d-60f565ff48c3")
-		(property "Reference" "R3"
+		(property "Reference" "R2"
 			(at 93.726 164.592 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8177,7 +8402,7 @@
 		(instances
 			(project "agat_disk_adapter"
 				(path "/e6908ff4-84b7-4cdb-b4c1-fd2e829eca09"
-					(reference "R3")
+					(reference "R2")
 					(unit 1)
 				)
 			)
